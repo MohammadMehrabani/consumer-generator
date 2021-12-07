@@ -1,0 +1,38 @@
+{
+    "name": "mohammadmehrabani/consumer-generator",
+    "description": "Quickly generating consumer (receiver)",
+    "keywords": [
+        "laravel",
+        "consumer",
+        "RabbitMQ"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mohammad mehrabani",
+            "email": "mehrabani.developer@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5.0|~6.0|~7.0|^8.0",
+        "illuminate/console": "~5.0|~6.0|~7.0|^8.0",
+        "php-amqplib/php-amqplib": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MohammadMehrabani\\ConsumerGenerator\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MohammadMehrabani\\ConsumerGenerator\\ConsumerGeneratorServiceProvider"
+            ]
+        }
+    }
+}
